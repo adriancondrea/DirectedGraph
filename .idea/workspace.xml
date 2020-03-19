@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="702fc25b-5e04-4cbc-8887-124d94519944" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YGZOba8qNJZhrGUs1kCMHQCdce" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="directed_graph" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DirectedGraph" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/directed_graph.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DirectedGraph" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DirectedGraph" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.directed_graph" />
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="702fc25b-5e04-4cbc-8887-124d94519944" name="Default Changelist" comment="" />
+      <created>1582570860290</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582570860290</updated>
+      <workItem from="1582570865949" duration="3220000" />
+      <workItem from="1582581310444" duration="824000" />
+      <workItem from="1582630270170" duration="385000" />
+      <workItem from="1582640863105" duration="7653000" />
+      <workItem from="1582666919919" duration="588000" />
+      <workItem from="1582697161970" duration="199000" />
+      <workItem from="1582751250393" duration="2895000" />
+      <workItem from="1583093683102" duration="3458000" />
+      <workItem from="1583243318119" duration="600000" />
+      <workItem from="1583312670333" duration="571000" />
+      <workItem from="1583914977898" duration="340000" />
+      <workItem from="1584017998433" duration="44000" />
+      <workItem from="1584113253824" duration="1282000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1398" height="303" key="GridCell.Tab.0.bottom" timestamp="1584114855394">
+      <screen x="0" y="23" width="1440" height="809" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582754807147" />
+    <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.23.1440.809@0.23.1440.809" timestamp="1584114855394" />
+    <state width="1878" height="376" key="GridCell.Tab.0.bottom/1920.366.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1583101497725" />
+    <state width="1878" height="304" key="GridCell.Tab.0.bottom/1920.389.1440.877/0.0.1920.1080@0.0.1920.1080" timestamp="1582643781068" />
+    <state width="1398" height="303" key="GridCell.Tab.0.center" timestamp="1584114855394">
+      <screen x="0" y="23" width="1440" height="809" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1582754807147" />
+    <state width="1398" height="303" key="GridCell.Tab.0.center/0.23.1440.809@0.23.1440.809" timestamp="1584114855394" />
+    <state width="1878" height="376" key="GridCell.Tab.0.center/1920.366.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1583101497722" />
+    <state width="1878" height="304" key="GridCell.Tab.0.center/1920.389.1440.877/0.0.1920.1080@0.0.1920.1080" timestamp="1582643781067" />
+    <state width="1398" height="303" key="GridCell.Tab.0.left" timestamp="1584114855393">
+      <screen x="0" y="23" width="1440" height="809" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1582754807146" />
+    <state width="1398" height="303" key="GridCell.Tab.0.left/0.23.1440.809@0.23.1440.809" timestamp="1584114855393" />
+    <state width="1878" height="376" key="GridCell.Tab.0.left/1920.366.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1583101497721" />
+    <state width="1878" height="304" key="GridCell.Tab.0.left/1920.389.1440.877/0.0.1920.1080@0.0.1920.1080" timestamp="1582643781066" />
+    <state width="1398" height="303" key="GridCell.Tab.0.right" timestamp="1584114855394">
+      <screen x="0" y="23" width="1440" height="809" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1582754807147" />
+    <state width="1398" height="303" key="GridCell.Tab.0.right/0.23.1440.809@0.23.1440.809" timestamp="1584114855394" />
+    <state width="1878" height="376" key="GridCell.Tab.0.right/1920.366.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1583101497724" />
+    <state width="1878" height="304" key="GridCell.Tab.0.right/1920.389.1440.877/0.0.1920.1080@0.0.1920.1080" timestamp="1582643781067" />
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1582666117125">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582666117125" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1582666117124">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1582666117124" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1582666117124">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1582666117124" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1582666117125">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1582666117125" />
+    <state x="385" y="156" width="670" height="676" key="search.everywhere.popup" timestamp="1582572869545">
+      <screen x="0" y="23" width="1440" height="809" />
+    </state>
+    <state x="385" y="156" width="670" height="676" key="search.everywhere.popup/0.23.1440.809@0.23.1440.809" timestamp="1582572869545" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DirectedGraph$main.coverage" NAME="main Coverage Results" MODIFIED="1584114484261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DirectedGraph$directed_graph.coverage" NAME="directed_graph Coverage Results" MODIFIED="1582649088349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DirectedGraph$test.coverage" NAME="test Coverage Results" MODIFIED="1582572158369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
