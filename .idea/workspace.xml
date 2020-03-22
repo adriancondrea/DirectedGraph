@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="702fc25b-5e04-4cbc-8887-124d94519944" name="Default Changelist" comment="" />
+    <list default="true" id="702fc25b-5e04-4cbc-8887-124d94519944" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/graph100k.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph10k.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph1k.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph1m.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrong.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/directed_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/directed_graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/read_graph.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/external_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,17 +24,25 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Unit Test" />
         <option value="Python Script" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YGZOba8qNJZhrGUs1kCMHQCdce" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -32,28 +54,6 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.main">
-    <configuration name="directed_graph" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DirectedGraph" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/directed_graph.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DirectedGraph" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -76,33 +76,73 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for tests.test_directed_graph.test_get_outbound_edges" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="DirectedGraph" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_directed_graph.test_get_outbound_edges&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for tests.test_directed_graph.test_remove_vertex" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="DirectedGraph" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_directed_graph.test_remove_vertex&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for tests.test_directed_graph.test_set_cost" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="DirectedGraph" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_directed_graph.test_set_cost&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in tests.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="DirectedGraph" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.directed_graph" />
-        <item itemvalue="Python.test" />
+        <item itemvalue="Python tests.Unittests in tests.py" />
+        <item itemvalue="Python tests.Unittests for tests.test_directed_graph.test_remove_vertex" />
+        <item itemvalue="Python tests.Unittests for tests.test_directed_graph.test_get_outbound_edges" />
+        <item itemvalue="Python tests.Unittests for tests.test_directed_graph.test_set_cost" />
       </list>
     </recent_temporary>
   </component>
@@ -141,65 +181,85 @@
       <workItem from="1583914977898" duration="340000" />
       <workItem from="1584017998433" duration="44000" />
       <workItem from="1584113253824" duration="1282000" />
+      <workItem from="1584701865339" duration="351000" />
+      <workItem from="1584880737625" duration="15554000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="303" key="GridCell.Tab.0.bottom" timestamp="1584114855394">
-      <screen x="0" y="23" width="1440" height="809" />
+    <state x="303" y="52" key="CommitChangelistDialog2" timestamp="1584886860915">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582754807147" />
+    <state x="303" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1584886860915" />
+    <state width="1398" height="305" key="GridCell.Tab.0.bottom" timestamp="1584899714214">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="305" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584899714214" />
     <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.23.1440.809@0.23.1440.809" timestamp="1584114855394" />
     <state width="1878" height="376" key="GridCell.Tab.0.bottom/1920.366.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1583101497725" />
     <state width="1878" height="304" key="GridCell.Tab.0.bottom/1920.389.1440.877/0.0.1920.1080@0.0.1920.1080" timestamp="1582643781068" />
-    <state width="1398" height="303" key="GridCell.Tab.0.center" timestamp="1584114855394">
-      <screen x="0" y="23" width="1440" height="809" />
+    <state width="1398" height="305" key="GridCell.Tab.0.center" timestamp="1584899714212">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1582754807147" />
+    <state width="1398" height="305" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584899714212" />
     <state width="1398" height="303" key="GridCell.Tab.0.center/0.23.1440.809@0.23.1440.809" timestamp="1584114855394" />
     <state width="1878" height="376" key="GridCell.Tab.0.center/1920.366.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1583101497722" />
     <state width="1878" height="304" key="GridCell.Tab.0.center/1920.389.1440.877/0.0.1920.1080@0.0.1920.1080" timestamp="1582643781067" />
-    <state width="1398" height="303" key="GridCell.Tab.0.left" timestamp="1584114855393">
-      <screen x="0" y="23" width="1440" height="809" />
+    <state width="1398" height="305" key="GridCell.Tab.0.left" timestamp="1584899714210">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1582754807146" />
+    <state width="1398" height="305" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584899714210" />
     <state width="1398" height="303" key="GridCell.Tab.0.left/0.23.1440.809@0.23.1440.809" timestamp="1584114855393" />
     <state width="1878" height="376" key="GridCell.Tab.0.left/1920.366.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1583101497721" />
     <state width="1878" height="304" key="GridCell.Tab.0.left/1920.389.1440.877/0.0.1920.1080@0.0.1920.1080" timestamp="1582643781066" />
-    <state width="1398" height="303" key="GridCell.Tab.0.right" timestamp="1584114855394">
-      <screen x="0" y="23" width="1440" height="809" />
+    <state width="1398" height="305" key="GridCell.Tab.0.right" timestamp="1584899714213">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1582754807147" />
+    <state width="1398" height="305" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584899714213" />
     <state width="1398" height="303" key="GridCell.Tab.0.right/0.23.1440.809@0.23.1440.809" timestamp="1584114855394" />
     <state width="1878" height="376" key="GridCell.Tab.0.right/1920.366.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1583101497724" />
     <state width="1878" height="304" key="GridCell.Tab.0.right/1920.389.1440.877/0.0.1920.1080@0.0.1920.1080" timestamp="1582643781067" />
-    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1582666117125">
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1584895920344">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582666117125" />
-    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1582666117124">
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584895920344" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1584895920343">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1582666117124" />
-    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1582666117124">
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1584895920343" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1584895920343">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1582666117124" />
-    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1582666117125">
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1584895920343" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1584895920344">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1582666117125" />
-    <state x="385" y="156" width="670" height="676" key="search.everywhere.popup" timestamp="1582572869545">
-      <screen x="0" y="23" width="1440" height="809" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1584895920344" />
+    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584899930213">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1584899930213" />
+    <state x="385" y="148" width="670" height="753" key="search.everywhere.popup" timestamp="1584888154630">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="148" width="670" height="753" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1584888154630" />
     <state x="385" y="156" width="670" height="676" key="search.everywhere.popup/0.23.1440.809@0.23.1440.809" timestamp="1582572869545" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DirectedGraph$main.coverage" NAME="main Coverage Results" MODIFIED="1584114484261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DirectedGraph$Unittests_for_tests_test_directed_graph_test_set_cost.coverage" NAME="Unittests for tests.test_directed_graph.test_set_cost Coverage Results" MODIFIED="1584897062737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DirectedGraph$Unittests_for_tests_test_iterate_vertices.coverage" NAME="Unittests for tests.test_iterate_vertices Coverage Results" MODIFIED="1584895472708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DirectedGraph$Unittests_for_tests_test_directed_graph_test_get_outbound_edges.coverage" NAME="Unittests for tests.test_directed_graph.test_get_outbound_edges Coverage Results" MODIFIED="1584897548543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DirectedGraph$Unittests_for_tests_test_directed_graph_test_remove_vertex.coverage" NAME="Unittests for tests.test_directed_graph.test_remove_vertex Coverage Results" MODIFIED="1584897559646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DirectedGraph$Unittests_in_tests_py.coverage" NAME="Unittests in tests.py Coverage Results" MODIFIED="1584899167624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DirectedGraph$main.coverage" NAME="main Coverage Results" MODIFIED="1584899174505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DirectedGraph$directed_graph.coverage" NAME="directed_graph Coverage Results" MODIFIED="1582649088349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DirectedGraph$test.coverage" NAME="test Coverage Results" MODIFIED="1582572158369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DirectedGraph$Unittests_for_tests_test_directed_graph_test_get_number_of_edges.coverage" NAME="Unittests for tests.test_directed_graph.test_get_number_of_edges Coverage Results" MODIFIED="1584895962366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

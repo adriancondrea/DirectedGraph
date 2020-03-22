@@ -1,23 +1,18 @@
 class DirectedGraph:
     """
-    Repreents a directed graph with costs, storing the list of incoming and outgoing vertices for each vertex, and a
-    list of costs
+    Represents a directed graph with costs, storing the list of inbound and outbound vertices for each vertex, in
+    dictionaries, and a dictionary of costs, where for each edge we store its cost
     """
+
     def __init__(self, n=0):
         """
         creates a graph with n vertices, from 0 to n - 1
         :param n: number of vertices
         implicitly n = 0 -> creates an empty graph
         """
-        # for each vertex v, we create a set of incoming nodes (nodes that have an edge ending in v) and a list for
-        # outgoing nodes (nodes that have an edge starting in v).
         self._inbound = {}
         self._outbound = {}
-        # creating a dictionary for storing costs. For each tuple (a, b) where a and b are vertices in our graph, we
-        # associate an integer
         self._costs = {}
-        # initialize the keys from 0 to n - 1, representing the vertices, with empty lists, in both incoming and
-        # outgoing dictionaries
         for i in range(n):
             self._inbound[i] = []
             self._outbound[i] = []
@@ -26,6 +21,10 @@ class DirectedGraph:
         """Returns a generator that parses the vertices"""
         for vertex in self._outbound.keys():
             yield vertex
+
+    def iterate_edges(self):
+        for edge in self._costs.keys():
+            yield edge
 
     def valid_vertex(self, vertex):
         """
@@ -40,7 +39,18 @@ class DirectedGraph:
         """
         return len(self._outbound.keys())
 
-    
+    def get_number_of_edges(self):
+        """
+        :return: the number of edges of the graph
+        """
+        return len(self._costs.keys())
+
+    def get_costs(self):
+        """
+        :return: the costs dictionary
+        """
+        return self._costs
+
     def is_edge_between(self, start, end):
         """
         checks if there is an edge between start and end, checking if start and end are valid vertices. If they are
@@ -73,7 +83,7 @@ class DirectedGraph:
             raise ValueError('invalid vertex!')
         return len(self._outbound[vertex])
 
-    def add_edge(self, start, end, cost):
+    def add_edge(self, start, end, cost=0):
         """
         adds an edge between start and end with given cost. If start and and are not valid vertices, we raise a
         valueError. If the edge already exists, we raise a ValueError
@@ -104,7 +114,7 @@ class DirectedGraph:
             raise ValueError('edge does not exist!')
         # delete the key from the dictionary
         del self._costs[(start, end)]
-        # delete start from the incoming list of end and end from the outgoing list of start
+        # delete start from the inbound list of end and end from the outbound list of start
         self._inbound[end].remove(start)
         self._outbound[start].remove(end)
 
@@ -165,19 +175,18 @@ class DirectedGraph:
             raise ValueError('Edge does not exist!')
         self._costs[(start, end)] = value
 
-    def add_vertex(self):
+    def add_vertex(self, vertex):
         """
-        adds another vertex to the graph. Its index will be the length of the list of keys of incoming vertices, because
-        vertices are indexed from 0.
+        adds another vertex to the graph. If the vertex already exists, raises ValueError
         :return: updates the graph
         """
-        vertex = len(self._inbound.keys())
+        if vertex in self._inbound.keys():
+            raise ValueError('vertex already exists!')
         self._inbound[vertex] = []
         self._outbound[vertex] = []
 
     def remove_vertex(self, vertex):
         """
-        CAN BE OPTIMAL - parse the list of incoming 
         removes given vector from graph and all its instances. Raises ValueError if the vertex does not exist.
         :param vertex:
         :return:
@@ -197,6 +206,5 @@ class DirectedGraph:
         for i in self._costs.keys():
             if vertex in i:
                 keys_to_remove.append(i)
-
         for k in keys_to_remove:
             del self._costs[k]
