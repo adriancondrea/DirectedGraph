@@ -6,6 +6,7 @@ def run():
         ui = Ui()
     except ValueError as ve:
         print(ve)
+        return
 
     ui.run()
 

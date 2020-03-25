@@ -133,8 +133,7 @@ class Ui:
         self._graph.remove_edge(start, end)
 
     def add_vertex_ui(self):
-        vertex = int(input('enter vertex to add: '))
-        self._graph.add_vertex(vertex)
+        self._graph.add_vertex()
 
     def remove_vertex_ui(self):
         vertex = int(input('vertex: '))

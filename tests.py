@@ -110,14 +110,9 @@ class test_directed_graph(unittest.TestCase):
         graph.set_cost(0, 0, 1)
 
     def test_add_vertex(self):
-        try:
-            graph.add_vertex(0)
-            assert False
-        except ValueError:
-            assert True
-        graph.add_vertex(100)
-        assert graph.get_in_degree(100) == 0 and graph.get_out_degree(100) == 0
-        graph.remove_vertex(100)
+        graph.add_vertex()
+        assert graph.get_in_degree(graph.get_number_of_vertices() - 1) == 0 and graph.get_out_degree(graph.get_number_of_vertices() - 1) == 0
+        graph.remove_vertex(graph.get_number_of_vertices() - 1)
 
     def test_remove_vertex(self):
         try:
@@ -125,8 +120,7 @@ class test_directed_graph(unittest.TestCase):
             assert False
         except ValueError:
             assert True
-        graph.add_vertex(5)
-        assert graph.valid_vertex(5)
+        graph.add_vertex()
         graph.remove_vertex(5)
         assert not graph.valid_vertex(5)
 

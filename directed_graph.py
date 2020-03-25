@@ -1,3 +1,5 @@
+from copy import deepcopy
+
 class DirectedGraph:
     """
     Represents a directed graph with costs, storing the list of inbound and outbound vertices for each vertex, in
@@ -19,7 +21,8 @@ class DirectedGraph:
 
     def iterate_vertices(self):
         """Returns a generator that parses the vertices"""
-        for vertex in self._outbound.keys():
+        number_of_vertices = self.get_number_of_vertices()
+        for vertex in range(number_of_vertices):
             yield vertex
 
     def iterate_edges(self):
@@ -31,7 +34,7 @@ class DirectedGraph:
         checks if a vertex is valid (it is in the list of vertices)
         :return: True if it is valid, False otherwise
         """
-        return vertex in self._inbound.keys()
+        return 0 <= vertex < self.get_number_of_vertices()
 
     def get_number_of_vertices(self):
         """
@@ -175,15 +178,35 @@ class DirectedGraph:
             raise ValueError('Edge does not exist!')
         self._costs[(start, end)] = value
 
-    def add_vertex(self, vertex):
+    def add_vertex(self):
         """
-        adds another vertex to the graph. If the vertex already exists, raises ValueError
+        adds another vertex to the graph, vertices remain from 0 to n - 1, where n - number of vertices
         :return: updates the graph
         """
-        if vertex in self._inbound.keys():
-            raise ValueError('vertex already exists!')
+        vertex = self.get_number_of_vertices()
         self._inbound[vertex] = []
         self._outbound[vertex] = []
+
+    def set_cost_to_new_cost(self, newCosts):
+        """
+        sets the costs parameter of the class to a deepcopy of another costs dictionary. Used when removing a vertex
+        in order to renumber them
+        :param newCosts:
+        :return:
+        """
+        self._costs = deepcopy(newCosts)
+
+    def modify_neighbours(self, index, newInbound, newOutbound):
+        """
+        sets the inbound and outbound lists of element at index to the new values newInbound and newOutbound. used when
+        removing a vertex in order to shift all vertices that follow it by one
+        :param index: key from dictionary that represents the value of whose key we want to change
+        :param newInbound: list of new inbound vertices
+        :param newOutbound: list of new outbound vertices
+        :return:
+        """
+        self._inbound[index] = newInbound[:]
+        self._outbound[index] = newOutbound[:]
 
     def remove_vertex(self, vertex):
         """
@@ -208,3 +231,36 @@ class DirectedGraph:
                 keys_to_remove.append(i)
         for k in keys_to_remove:
             del self._costs[k]
+        # renumber the vertices
+        number_of_vertices = self.get_number_of_vertices()
+        # all the neighbours of vertices after the one removed are shifted one position to the left
+        for i in range(vertex, number_of_vertices):
+            self.modify_neighbours(i, self._inbound[i+1], self._outbound[i+1])
+        #if the vertex we removed was not the last one, we delete its key
+        if vertex != number_of_vertices:
+            del self._inbound[number_of_vertices]
+            del self._outbound[number_of_vertices]
+
+        #we decrease the index of all vertices greater than the removed vertex by one
+        for i in self._outbound.keys():
+            l = len(self._outbound[i])
+            for j in range(l):
+                if self._outbound[i][j] > vertex:
+                    self._outbound[i][j] -= 1
+
+        for i in self._inbound.keys():
+            l = len(self._inbound[i])
+            for j in range(l):
+                if self._inbound[i][j] > vertex:
+                    self._inbound[i][j] -= 1
+
+        #we update the dictionary of costs
+        newCosts = {}
+        for start, end in self._costs:
+            cost = self._costs[(start, end)]
+            if start > vertex:
+                start -= 1
+            if end > vertex:
+                end -= 1
+            newCosts[(start, end)] = cost
+        self.set_cost_to_new_cost(newCosts)
