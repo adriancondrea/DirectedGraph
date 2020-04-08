@@ -11,6 +11,7 @@ class DirectedGraph:
         creates a graph with n vertices, from 0 to n - 1
         :param n: number of vertices
         implicitly n = 0 -> creates an empty graph
+        memory complexity for representation: O(n + m) where n - number of vertices, m - number of edges
         """
         self._inbound = {}
         self._outbound = {}
@@ -19,16 +20,19 @@ class DirectedGraph:
             self._inbound[i] = []
             self._outbound[i] = []
 
+    # complexity: O(n) where n - number of vertices
     def iterate_vertices(self):
         """Returns a generator that parses the vertices"""
         number_of_vertices = self.get_number_of_vertices()
         for vertex in range(number_of_vertices):
             yield vertex
 
+    # complexity: O(m) where m - number of edges
     def iterate_edges(self):
         for edge in self._costs.keys():
             yield edge
 
+    # complexity: O(1)
     def valid_vertex(self, vertex):
         """
         checks if a vertex is valid (it is in the list of vertices)
@@ -36,24 +40,28 @@ class DirectedGraph:
         """
         return 0 <= vertex < self.get_number_of_vertices()
 
+    #complexity: O(1)
     def get_number_of_vertices(self):
         """
         :return: the number of vertices of the graph
         """
         return len(self._outbound.keys())
 
+    #complexity: O(1)
     def get_number_of_edges(self):
         """
         :return: the number of edges of the graph
         """
         return len(self._costs.keys())
 
+    #complexity: O(1)
     def get_costs(self):
         """
         :return: the costs dictionary
         """
         return self._costs
 
+    #complexity: O(outDegree(start)). maximum complexity: O(n)
     def is_edge_between(self, start, end):
         """
         checks if there is an edge between start and end, checking if start and end are valid vertices. If they are
@@ -66,6 +74,7 @@ class DirectedGraph:
             raise ValueError('invalid start / end')
         return end in self._outbound[start]
 
+    #complexity: O(1)
     def get_in_degree(self, vertex):
         """
         returns the in degree of given vertex. If the vertex is not valid, we raise ValueError
@@ -76,6 +85,7 @@ class DirectedGraph:
             raise ValueError('invalid vertex!')
         return len(self._inbound[vertex])
 
+    #complexity: O(1)
     def get_out_degree(self, vertex):
         """
         returns the out degree of given vertex. If the vertex is not valid, we raise ValueError
@@ -86,6 +96,7 @@ class DirectedGraph:
             raise ValueError('invalid vertex!')
         return len(self._outbound[vertex])
 
+    #complexity: O(1)
     def add_edge(self, start, end, cost=0):
         """
         adds an edge between start and end with given cost. If start and and are not valid vertices, we raise a
@@ -103,6 +114,7 @@ class DirectedGraph:
         self._inbound[end].append(start)
         self._costs[(start, end)] = cost
 
+    # complexity: O(inDegree(end) + outDegree(start)) - maximum O(n)
     def remove_edge(self, start, end):
         """
         removes the edge between start and end. If start and end are not valid vertices, raise ValueError. If the
@@ -121,6 +133,7 @@ class DirectedGraph:
         self._inbound[end].remove(start)
         self._outbound[start].remove(end)
 
+    # complexity: O(outDegree(vertrex)) - maximum O(n) where n - number of vertices
     def get_outbound_edges(self, vertex):
         """
         returns a generator that parses the outbound edges for vertex. If vertex is not in the
@@ -135,6 +148,7 @@ class DirectedGraph:
         for v in self._outbound[vertex]:
             yield v
 
+    # complexity: O(inDegree(vertex)) - maximum O(n) where n - number of vertices
     def get_inbound_edges(self, vertex):
         """
         returns a generator that parses the inbound edges for vertex. If vertex is not valid, raise
@@ -149,6 +163,7 @@ class DirectedGraph:
         for v in self._inbound[vertex]:
             yield v
 
+    # complexity: O(1)
     def get_cost(self, start, end):
         """
         returns the cost of the edge starting from start and ending at end. If start and end are not valid vertices, we
@@ -163,6 +178,7 @@ class DirectedGraph:
             raise ValueError('Edge does not exist!')
         return self._costs[(start, end)]
 
+    # complexity: O(1)
     def set_cost(self, start, end, value):
         """
         sets the cost of the edge (start, end) to value. If the edge does not exist, or start and end are not valid
@@ -178,6 +194,7 @@ class DirectedGraph:
             raise ValueError('Edge does not exist!')
         self._costs[(start, end)] = value
 
+    # complexity: O(1)
     def add_vertex(self):
         """
         adds another vertex to the graph, vertices remain from 0 to n - 1, where n - number of vertices

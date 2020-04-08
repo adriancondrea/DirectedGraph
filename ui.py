@@ -1,6 +1,6 @@
 from external_functions import read_graph, write_graph, create_random_graph, DirectedGraph
 from copy import deepcopy
-
+from lab2 import findLowestLengthPathBFS
 class Ui:
     def __init__(self):
         """
@@ -29,6 +29,7 @@ class Ui:
         print('16.Write graph to a text file')
         print('17.Create random graph with given number of vertices and edges')
         print('18.Iterate all edges')
+        print('19.Find the lowest length path between two vertices')
 
     def print_number_of_vertices(self):
         print('The number of vertices is ' + str(self._graph.get_number_of_vertices()))
@@ -183,13 +184,29 @@ class Ui:
         edges = int(input('number of edges: '))
         self._graph = create_random_graph(vertices, edges)
 
+    def find_shortest_path_ui(self):
+        start = int(input('start vertex: '))
+        end = int(input('end vertex: '))
+        try:
+            path = findLowestLengthPathBFS(self._graph, start, end)
+        except ValueError as ve:
+            print(ve)
+            return
+        if len(path) == 0:
+            print('start node is end node!')
+        else:
+            for vertrex in path[:-1]:
+                print(str(vertrex) + '->', end = '')
+            print(path[-1])
+            print('length: ', len(path))
+
     def run(self):
         commands = {'1': self.print_number_of_vertices, '2': self.iterate_set_of_vertices, '3': self.check_edges,
                     '4': self.print_degree, '5': self.iterate_outbound_edges, '6': self.iterate_inbound_edges,
                     '7': self.print_cost, '8': self.modify_cost_ui, '9': self.add_edge_ui, '10': self.remove_edge_ui,
                     '11': self.add_vertex_ui, '12': self.remove_vertex_ui, '13': self.copy_graph_ui,
                     '14': self.restore_graph_ui, '15': self.read_graph_ui, '16': self.write_graph_ui,
-                    '17': self.create_random_graph_ui, '18': self.iterate_all_edges}
+                    '17': self.create_random_graph_ui, '18': self.iterate_all_edges, '19':self.find_shortest_path_ui}
         while True:
             self.print_menu()
             command = input('> ')
