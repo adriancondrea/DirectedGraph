@@ -36,3 +36,6 @@ Text file format: the graph will be read from a text file having the following f
 
 On the first line, the number n of vertices and the number m of edges;
 On each of the following m lines, three numbers, x, y and c, describing an edge: the origin, the target and the cost of that edge.
+
+lab2:
+1. Write a program that, given a directed graph and two vertices, finds a lowest length path between them, by using a forward breadth-first search from the starting vertex.
